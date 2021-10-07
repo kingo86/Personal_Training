@@ -1,3 +1,4 @@
+HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,47 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
     <title>Personal Training</title>
-
+    <div class="pure-menu pure-menu-horizontal">
+      <a href="#" class="pure-menu-heading pure-menu-link">CHOO Choos Training </a>
+      <ul class="pure-menu-list">
+          <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">News</a>
+          </li>
+          <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">Sports</a>
+          </li>
+          <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">Finance</a>
+          </li>
+      </ul>
+    </div>
+    <form name="bmiForm" class="pure-form pure-form-stacked" style="padding-left: 20px;">
+      <label for="name">Your Name</label>
+      <input type="text" placeholder="Your Name..." name="name" size="10"></br>
+      <label for="age">Your Age</label>
+      <input type="text" name="age" placeholder="Your Age..."></br>
+      <label for="weight">Your Weight (kg)</label>
+      <input type="text" placeholder="Your Weight..." name="weight" size="10"></br>
+      <label for="height">Your Height (cm)</label>
+      <input type="text" placeholder= "Your Height..." name="height" size="10"></br>
+      <input type="button" value="Calculate BMI" onClick="calculateBmi()"></br>
+      <label for="name">Your BMI</label>
+      <input type="text" name="bmi" size="10" placeholder="Your BMI..."></br>
+      <label for="condition">This means that...</label>
+      <input type="text" name="condition" placeholder="Your Condition..."></br>
+      <label for="name">Your Personal Trainer</label>
+      <input type="text" name="meaning" size="25"  placeholder="Your Personal Trainer..."></br>
+      <input type="reset" value="Reset" />
+      </form>
 </head>
 <body>
-    <div class="pure-menu pure-menu-horizontal">
-        <a href="#" class="pure-menu-heading pure-menu-link">CHOO Choos Training </a>
-        <ul class="pure-menu-list">
-            <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">News</a>
-            </li>
-            <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">Sports</a>
-            </li>
-            <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">Finance</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="pure-g">
-        <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-            <form class="pure-form pure-form-stacked">
-                <fieldset>
-
-                    <label for="name">Your Name</label>
-                    <input id="name" type="text" placeholder="Your Name">
-
-
-                    <label for="email">Your Email</label>
-                    <input id="email" type="email" placeholder="Your Email">
-
-                    <label for="password">Your Password</label>
-                    <input id="password" type="password" placeholder="Your Password">
-
-                    <button type="submit" class="pure-button">Sign Up</button>
-                </fieldset>
-            </form>
-        </div>
-
-    <h1>Site here</h1>
-
-
-    <h2> GROUP</h2>
+  <script src="js/script.js"></script>
 </body>
 </html>
