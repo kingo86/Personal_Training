@@ -9,34 +9,23 @@ HTML
     <title>Personal Training</title>
     <div class="pure-menu pure-menu-horizontal">
       <a href="#" class="pure-menu-heading pure-menu-link">CHOO Choos Training </a>
-      <ul class="pure-menu-list">
-          <li class="pure-menu-item">
-              <a href="#" class="pure-menu-link">News</a>
-          </li>
-          <li class="pure-menu-item">
-              <a href="#" class="pure-menu-link">Sports</a>
-          </li>
-          <li class="pure-menu-item">
-              <a href="#" class="pure-menu-link">Finance</a>
-          </li>
-      </ul>
     </div>
     <form name="bmiForm" class="pure-form pure-form-stacked" style="padding-left: 20px;">
       <label for="name">Your Name</label>
-      <input type="text" placeholder="Your Name..." name="name" size="10"></br>
+      <input type="text" placeholder="Your Name..." name="name"></br>
       <label for="age">Your Age</label>
-      <input type="text" name="age" placeholder="Your Age..."></br>
+      <input id="age" type="text" name="age" placeholder="Your Age..."></br>
       <label for="weight">Your Weight (kg)</label>
-      <input type="text" placeholder="Your Weight..." name="weight" size="10"></br>
+      <input id="weight" type="text" placeholder="Your Weight..." name="weight"></br>
       <label for="height">Your Height (cm)</label>
-      <input type="text" placeholder= "Your Height..." name="height" size="10"></br>
-      <input type="button" value="Calculate BMI" onClick="calculateBmi()"></br>
+      <input id="height" type="text" placeholder= "Your Height..." name="height"></br>
+      <button id="calc-button" type="button" value="Calculate BMI">Calculate BMI</button></br>
       <label for="name">Your BMI</label>
-      <input type="text" name="bmi" size="10" placeholder="Your BMI..."></br>
+      <div type="text" name="bmi" size="10"></div></br>
       <label for="condition">This means that...</label>
-      <input type="text" name="condition" placeholder="Your Condition..."></br>
+      <div id="#response-container" type="text" name="condition" ></div></br>
       <label for="name">Your Personal Trainer</label>
-      <input type="text" name="meaning" size="25"  placeholder="Your Personal Trainer..."></br>
+      <div type="text" name="meaning" size="25"></div></br>
       <input type="reset" value="Reset" />
       </form>
 </head>
