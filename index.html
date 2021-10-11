@@ -15,21 +15,21 @@
     <a href="#" class="pure-menu-heading pure-menu-link">CHOO Choos Training </a>
   </div>
   <form name="bmiForm" class="pure-form pure-form-stacked" style="padding-left: 20px;">
-    <label for="name">Your Name</label>
+    <label for="stacked-name">Your Name</label>
     <input type="text" placeholder="Your Name..." name="name"></br>
-    <label for="age">Your Age</label>
+    <label for="stacked-age">Your Age</label>
     <input id="age" type="text" name="age" placeholder="Your Age..."></br>
-    <label for="weight">Your Weight (kg)</label>
+    <label for="stacked-weight">Your Weight (kg)</label>
     <input id="weight" type="text" placeholder="Your Weight..." name="weight"></br>
-    <label for="height">Your Height (cm)</label>
+    <label for="stacked-height">Your Height (cm)</label>
     <input id="height" type="text" placeholder="Your Height..." name="height"></br>
     <input id="calc-button" type="button" value="Calculate BMI" onclick="calculateBmi">Calculate BMI</br>
   </form>
   </br>
-  <form>
-    <label for="name">Your BMI</label>
+  <form style="padding-left: 20px;">
+    <label for="stacked-name">Your BMI</label>
     <div id="bmi" type="text" name="bmi" size="10"></div></br>
-    <label for="condition">This means that...</label>
+    <label for="stacked-condition">This means that...</label>
     <div id="response-container" type="text" name="condition"></div></br>
     <div id="personalTrainer" for="name">
       <p>Your Personal Trainer</p>
@@ -37,6 +37,7 @@
     <div type="text" name="meaning" size="25"></div></br>
     <input type="reset" value="Reset" />
   </form>
+  <div id= "giphyapi"></div>
   <script src="js/script.js"></script>
 </body>
 

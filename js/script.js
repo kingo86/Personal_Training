@@ -1,4 +1,5 @@
 var calcBmiButton = document.querySelector('#calc-button')
+var searchTerm = "celebration"
 var weight = document.querySelector('#weight')
 var height = document.querySelector('#height')
 var age = document.querySelector('#age')
@@ -28,6 +29,28 @@ calcBmiButton.onclick = function calculate(e) {
       console.log(response.healthy_bmi_range);
       responseContainer.appendChild(bmiP)
       responseContainer.appendChild(healthP)
+      return fetch(
+        'https://api.giphy.com/v1/gifs/search?q=' +
+          searchTerm +
+          '&api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN&limit=1'
+      )
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(response) {
+          console.log(response.data[0]);
+          // Create a variable that will select the <div> where the GIF will be displayed
+          var responseContainerEl = document.querySelector('#giphyapi');
+    
+          // Empty out the <div> before we append a GIF to it
+          responseContainerEl.innerHTML = '';
+    
+          var gifImg = document.createElement('img');
+          gifImg.setAttribute('src', response.data[0].images.fixed_height.url);
+    
+          // Append 'gifImg' to the <div>
+          responseContainerEl.appendChild(gifImg);
+        });
 
     })
     .catch(err => {
