@@ -1,35 +1,43 @@
-HTML
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
-    <title>Personal Training</title>
-    <div class="pure-menu pure-menu-horizontal">
-      <a href="#" class="pure-menu-heading pure-menu-link">CHOO Choos Training </a>
-    </div>
-    <form name="bmiForm" class="pure-form pure-form-stacked" style="padding-left: 20px;">
-      <label for="name">Your Name</label>
-      <input type="text" placeholder="Your Name..." name="name"></br>
-      <label for="age">Your Age</label>
-      <input id="age" type="text" name="age" placeholder="Your Age..."></br>
-      <label for="weight">Your Weight (kg)</label>
-      <input id="weight" type="text" placeholder="Your Weight..." name="weight"></br>
-      <label for="height">Your Height (cm)</label>
-      <input id="height" type="text" placeholder= "Your Height..." name="height"></br>
-      <button id="calc-button" type="button" value="Calculate BMI">Calculate BMI</button></br>
-      <label for="name">Your BMI</label>
-      <div type="text" name="bmi" size="10"></div></br>
-      <label for="condition">This means that...</label>
-      <div id="#response-container" type="text" name="condition" ></div></br>
-      <label for="name">Your Personal Trainer</label>
-      <div type="text" name="meaning" size="25"></div></br>
-      <input type="reset" value="Reset" />
-      </form>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+    integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+  <title>Personal Training</title>
 </head>
+
 <body>
+  <div class="pure-menu pure-menu-horizontal">
+    <a href="#" class="pure-menu-heading pure-menu-link">CHOO Choos Training </a>
+  </div>
+  <form name="bmiForm" class="pure-form pure-form-stacked" style="padding-left: 20px;">
+    <label for="name">Your Name</label>
+    <input type="text" placeholder="Your Name..." name="name"></br>
+    <label for="age">Your Age</label>
+    <input id="age" type="text" name="age" placeholder="Your Age..."></br>
+    <label for="weight">Your Weight (kg)</label>
+    <input id="weight" type="text" placeholder="Your Weight..." name="weight"></br>
+    <label for="height">Your Height (cm)</label>
+    <input id="height" type="text" placeholder="Your Height..." name="height"></br>
+    <input id="calc-button" type="button" value="Calculate BMI" onclick="calculateBmi">Calculate BMI</br>
+  </form>
+  </br>
+  <form>
+    <label for="name">Your BMI</label>
+    <div id="bmi" type="text" name="bmi" size="10"></div></br>
+    <label for="condition">This means that...</label>
+    <div id="response-container" type="text" name="condition"></div></br>
+    <div id="personalTrainer" for="name">
+      <p>Your Personal Trainer</p>
+    </div>
+    <div type="text" name="meaning" size="25"></div></br>
+    <input type="reset" value="Reset" />
+  </form>
   <script src="js/script.js"></script>
 </body>
+
 </html>
